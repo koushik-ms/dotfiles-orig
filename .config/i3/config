@@ -176,6 +176,22 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+set $mode_system (l) lock (Shift+q) Logout (Shift+s) Shutdown
+mode "$mode_system" {
+        # These bindings trigger as soon as you enter system mode
+        # Shift+S for shutdown
+        bindsym Shift+S exec gksudo shutdown now
+        # Shift+Q for logout (Quit)
+        bindsym Shift+Q exec i3-msg exit
+        # l for lock
+        bindsym l exec i3-msg mode "default"; exec --no-startup-id /usr/bin/i3lock --color "$base01"
+        
+	# Back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+bindsym $mod+minus mode "$mode_system"
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -242,9 +258,9 @@ bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 
 
 # Startup programs (run every time)
-exec_always --no-startup-id compton -f
+exec_always compton -f
 # exec_always feh --bg-scale /usr/share/backgrounds/linuxmint-serena/sguiheneuc_contrast.jpg
-exec_always --no-startup-id xrandr --output HDMI1 --primary
+exec_always --no-startup-id xrandr --output HDMI1 --primary && sleep 2
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -272,4 +288,5 @@ bar {
 exec --no-startup-id /usr/bin/clipit
 exec --no-startup-id /usr/bin/workrave
 exec --no-startup-id /usr/bin/dropbox start -i
-
+exec --no-startup-id firefox
+exec --no-startup-id emacs
