@@ -1,0 +1,5 @@
+DO NOT USE THIS OR LATER VERSIONS OF ORG-OUTLOOK.EL
+
+This version seems to require a lot of configuration including making IE handle org-protocol links by opening emacsclient.
+Didn't work after spending 3 hours on this. See the version of 201207 instead,
+
