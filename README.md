@@ -43,3 +43,8 @@ Below is the concise list of dependencies:
 7. San Francisco Display font
 8. ... wallpapers.
 
+## Emacs
+
+Collected the emacs configurations backed up from multiple locations here. The idea is to stage them here to create the config file structure suitable for my new machine and then delete the branch.
+
+
