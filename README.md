@@ -28,5 +28,18 @@ folder (like .config) that begins with a "."
 Where relevant this repo also captures the documentation on
 dependencies and (links to) install instructions.
 
+## i3 setup
 
+This setup was done on linux mint using the instructions in setupi3.
+
+Below is the concise list of dependencies:
+1. i3lock
+2. i3status (installed by default on mint with i3)
+3. i3blocks (apt-get)
+4. fonts-fontawesome (apt-get or automatically installed)
+8. feh, rofi, libgtk-3-dev, compton (apt-get)
+5. Arc GTK Theme
+6. Arc firefox Theme (breaks some preferences, sync and download dialogs)
+7. San Francisco Display font
+8. ... wallpapers.
 
