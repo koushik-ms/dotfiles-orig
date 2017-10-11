@@ -288,5 +288,5 @@ bar {
 exec --no-startup-id /usr/bin/clipit
 exec --no-startup-id /usr/bin/workrave
 exec --no-startup-id /usr/bin/dropbox start -i
-exec --no-startup-id firefox
+# exec --no-startup-id firefox doesn't show the first open tab well
 exec --no-startup-id emacs
