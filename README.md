@@ -30,7 +30,7 @@ dependencies and (links to) install instructions.
 
 ## i3 setup
 
-This setup was done on linux mint using the instructions in setupi3.
+This setup was done on linux mint using the instructions in [setupi3](https://github.com/bookercodes/setupi3).
 
 Below is the concise list of dependencies:
 1. i3lock
@@ -42,4 +42,3 @@ Below is the concise list of dependencies:
 6. Arc firefox Theme (breaks some preferences, sync and download dialogs)
 7. San Francisco Display font
 8. ... wallpapers.
-
