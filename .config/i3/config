@@ -285,8 +285,8 @@ bar {
 }
 
 # One-time startup programs
-exec --no-startup-id /usr/bin/clipit
-exec --no-startup-id /usr/bin/workrave
-exec --no-startup-id /usr/bin/dropbox start -i
+exec --no-startup-id sleep 10 && /usr/bin/clipit
+exec --no-startup-id sleep 10 && /usr/bin/workrave
+exec --no-startup-id sleep 10 && /usr/bin/dropbox start -i
 # exec --no-startup-id firefox doesn't show the first open tab well
-exec --no-startup-id emacs
+exec --no-startup-id sleep 30 && emacs
