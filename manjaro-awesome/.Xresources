@@ -1,0 +1,92 @@
+#if __has_include(".extend.Xresources")
+#include ".extend.Xresources"
+#endif
+
+! ^ The above lines are no comments!
+! Leave them as they are if a file ~/.extend.Xresources is being used on your system.
+! config can be added there or also here below.
+! For comments use "!"
+
+Xft.dpi:  96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: true
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+
+! URxvt.font:                       6x13 
+! URXvt.font:            xft:Noto Sans Mono,Noto Sans Mono Med:style=Medium,Regular:size=12
+URxvt.font: xft:Hack:size=10
+! URxvt.font:  xft:IBM Plex Mono Text:size=10
+URxvt*letterSpace: -1
+
+! alternative font settings with 'terminus':
+! URxvt.font:      -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+! URxvt.bold.font: -xos4-terminus-bold-r-normal--12-120-72-72-c-60-iso10646-1
+
+! alternative font settings with 'terminus':
+! URxvt.font:      -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
+! URxvt.bold.font: -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso10646-1
+
+! alternative font settings with 'terminus':
+! URxvt.font:      -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso10646-1
+! URxvt.bold.font: -xos4-terminus-bold-r-normal--14-140-72-72-c-80-iso10646-1
+
+! alternative font settings with 'terminus':
+! URxvt.font:      -xos4-terminus-medium-r-normal--0-0-72-72-c-0-iso10646-1 
+! URxvt.bold.font: -xos4-terminus-bold-r-normal--0-0-72-72-c-0-iso10646-1
+
+! URxvt*transparent:  false
+! URxvt*background:   rgba:0000/0000/0000/FFFF
+URxvt*background: [70]#2b2b2b
+URxvt*foreground: #e7e7e7
+URxvt.scrollBar:  false
+URxvt.cursorColor: violet
+
+URxvt.perl-ext-common:      default,matcher,resize-font,clipboard,url-select,keyboard-select
+
+!! Settigs for url-select
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.url-select.underline: true
+! URxvt.url-select.launcher:  chromium
+URxvt.url-select.launcher: /usr/bin/xdg-open
+
+!! Settings for keyboard-select
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+
+!! Settings for resize-font
+URxvt.resize-font.smaller: C-j
+URxvt.resize-font.bigger:  C-k
+
+!! Settings for matcher
+URxvt.url-launcher:  /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+!! black
+*color0: #1b1918
+*color8: #766e6b
+!! red
+*color1: #f22c40
+*color9: #f22c40
+!! green
+*color2: #5ab738
+*color10: #5ab738
+!! yellow
+*color3: #d5911a
+*color11: #d5911a
+!! blue
+*color4: #407ee7
+*color12: #407ee7
+!! magenta
+*color5: #6666ea
+*color13: #6666ea
+!! cyan
+*color6: #00ad9c
+*color14: #00ad9c
+!! white
+*color7: #a8a19f
+*color15: #f1efee
+
