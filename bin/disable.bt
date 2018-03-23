@@ -1,0 +1,10 @@
+# To disable bt, run this script.
+# Enter root password when prompted.
+
+sudo systemctl disable bluetooth.service
+sudo systemctl mask bluetooth.service
+
+# First disable+mask and then stop. Otherwise it will be restarted immediately after stop completes.
+sudo systemctl stop bluetooth.service
+# This is also the reason start is optional when enabling. A restart of the system will start it auto.
+echo Run systemctl status bluetooth.service to check status

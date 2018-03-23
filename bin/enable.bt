@@ -1,0 +1,9 @@
+# To enable bt, run this script.
+# Enter root password when prompted.
+
+sudo systemctl unmask bluetooth.service
+sudo systemctl enable bluetooth.service
+# Optional but not required, since this is done automatically by other services/ targets depending on it.
+# sudo systemctl start bluetooth.service
+
+echo Run systemctl status bluetooth.service to check status
