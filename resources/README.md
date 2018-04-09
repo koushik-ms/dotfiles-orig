@@ -27,5 +27,5 @@ From [github](https://github.com/IBM/plex)
 ### Monoid
 From [github](https://github.com/larsenwork/monoid) and [website](https://larsenwork.com/monoid/)
 
-### Free fonts (Bebas Neue, Lato, Montserrat, Source Sans Pro)
+### Free fonts (Bebas Neue, Raleway, Lato, Montserrat, Source Sans Pro)
 From [Google Fonts](https://fonts.google.com) or [FontSquirrel](https://www.fontsquirrel.com)
